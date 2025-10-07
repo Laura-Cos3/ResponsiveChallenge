@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About Laura Costanza</title>
+  </head>
+  
+      <style>
+        :root {
+          --primary-color: #31071f;
+          --secondary-color: #f5f2fe;
+          --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+  
+        body {
+          background: linear-gradient(135deg, #8da1fa 0%, #07011d 100%);
+          min-height: 100vh;
+          margin: 0;
+          padding: 60px 20px;
+        }
+  
+        .main-container {
+          max-width: 900px;
+          margin: 0 auto;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(10px);
+          border-radius: 15px;
+          padding: 40px;
+          box-shadow: var(--box-shadow);
+        }
+  
+        h1,
+        h2,
+        h3 {
+          text-align: center;
+          margin: 0;
+        }
+  
+        h1 {
+          font-size: 96px;
+          color: var(--primary-color);
+        }
+  
+        h2 {
+          font-size: 48px;
+        }
+  
+        h3 {
+          font-size: 24px;
+          opacity: 0.7;
+        }
+  
+        p {
+          background: var(--secondary-color);
+          padding: 20px;
+          border-radius: 4px;
+          font-size: 18px;
+          line-height: 1.5;
+          text-align: center;
+        }
+  
+        .homepage-link {
+          color: var(--primary-color);
+          text-align: center;
+          display: block;
+          margin-bottom: 30px;
+        }
+  
+        .homepage-link:hover {
+          text-decoration: underline;
+          color: var(--primary-color);
+        }
+  
+        .about-paragraphs {
+          display: flex;
+          margin: 30px 0;
+          gap: 10px;
+        }
+  
+        .about-paragraphs p {
+          margin: 0;
+          flex: 1;
+        }
+  
+        .email-link {
+          display: flex;
+          justify-content: center;
+          color: var(--primary-color);
+          font-size: 28px;
+          text-decoration: none;
+        }
+  
+        .email-link:hover {
+          text-decoration: underline;
+          color: var(--primary-color);
+        }
+  
+        .projects-gallery {
+          margin: 40px 0;
+        }
+  
+        .gallery-title {
+          color: var(--primary-color);
+          font-size: 34px;
+          margin-bottom: 30px;
+        }
+  
+        @media (max-width: 768px) {
+          .about-paragraphs {
+            flex-direction: column;
+          }
+  
+          h1 {
+            font-size: 58px;
+          }
+  
+          h2 {
+            font-size: 33px;
+          }
+  
+          .main-container {
+            margin: 20px;
+            padding: 20px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="main-container">
+      <a href="index.html" class="homepage-link">Back to homepage</a>
+      <h1>About me</h1>
+      <h3>Front-end developer from Bristol, England</h3>
+      <div class="about-paragraphs">
+        <p> 
+          I'm a developer-in-training who enjoys problem solving. I have 15 years experience in the EdTech industry, mainly working with MIS software. 
+          I love creating applications that are user friendly and intuitive that can be used to save time and use data in the most efficient way.          </p>
+          <p>
+            When I'm not coding, I enjoy spending time as a reading volunteer at the local primary school. 
+            I love gardening and it is an ongoing process and evolving design, much like coding. I also like to spend time in the sunshine with my 2 cats.
+          </p>
+        </div>
+  
+        <div class="about-paragraphs">
+          <p>
+            Based in rural England, I'm developing my skills in HTML, CSS, AI,
+            JavaScript, Bootstrap, and Python. 
+          </p>
+          <p>
+            In my previous role, I spent many hours testing and documenting bugs and liaising with the development team. I look forward to using my knowledge for some more hands on project work in the future. 
+          </p>
+        </div>
+  
+        <!-- Project images gallery using Bootstrap grid -->
+        <div class="projects-gallery">
+          <h2 class="gallery-title">My Projects</h2>
+  
+          <div class="row g-4 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-4">
+              <div class="text-center">
+                <img
+                  src="images/Weather-App.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Weather App"
+                  style="
+                    height: 180px;
+                    width: 100%;
+                    object-fit: cover;
+                    background: linear-gradient(25deg, #667eea 0%, #764ba2 100%);
+                  "
+                />
+                <p class="mt-3 mb-0 fw-bold text-success">Weather App</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4">
+              <div class="text-center">
+                <img
+                  src="images/Poetry-App.jpg"
+                  class="img-fluid rounded shadow"
+                  style="
+                    height: 180px;
+                    width: 100%;
+                    object-fit: cover;
+                    background: linear-gradient(35deg, #ff6b9d 0%, #c44569 100%);
+                  "
+                />
+                <p class="mt-3 mb-0 fw-bold text-success">
+                  Perfect Poem Generator
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4">
+              <div class="text-center">
+                <img
+                  src="images/World-Clock-App.jpg"
+                  class="img-fluid rounded shadow"
+                  style="
+                    height: 180px;
+                    width: 100%;
+                    object-fit: cover;
+                    background: linear-gradient(45deg, #fa709a 0%, #fee140 100%);
+                  "
+                />
+                <p class="mt-3 mb-0 fw-bold text-success">World Clock App</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact">
+          <h2>📧 Contact me</h2>
+          <a href="mailto:lauracostanza@io" class="email-link">lauracostanza@io</a>
+        </div>
+    </div>
+
+  </body>
+</html>
